@@ -25,3 +25,9 @@
 .filterIcon.selected {
   color: white;
 }
+
+@media (max-width: 1130px) {
+  .sortFilterItem {
+    width: inherit;
+  }
+}

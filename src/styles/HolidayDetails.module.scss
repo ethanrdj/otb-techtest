@@ -36,7 +36,7 @@
   background-color: $yellow;
   color: $blue;
   border: none;
-  border-radius: 5%;
+  border-radius: 5px;
   width: 100%;
   line-height: 0.5em;
   padding: 5px;
@@ -55,4 +55,22 @@
   display: flex;
   gap: 3px;
   padding: 10px 0px;
+}
+
+@media (max-width: 1130px) {
+  .holidayDetails {
+    width: inherit;
+  }
+
+  .hotelName {
+    font-size: 1.6em;
+  }
+
+  .hotelLocation {
+    font-size: 1.2em;
+  }
+
+  .holidayInfo {
+    font-size: 1.4em;
+  }
 }

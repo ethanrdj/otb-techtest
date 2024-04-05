@@ -1,6 +1,6 @@
 .holidayCard {
   background-color: white;
-  width: 800px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   font-family: $primaryFont;
@@ -64,4 +64,18 @@
   color: $grey;
   font-size: 0.8em;
   letter-spacing: 0.03em;
+}
+
+@media (max-width: 1130px) {
+  .mainCardView {
+    flex-direction: column;
+  }
+
+  .holidayImage {
+    width: 100%;
+  }
+
+  .readMoreToggle {
+    display: none;
+  }
 }
