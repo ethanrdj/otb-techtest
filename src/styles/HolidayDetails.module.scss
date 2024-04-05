@@ -1,0 +1,58 @@
+.holidayDetails {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3%;
+  height: 100%;
+}
+
+.hotelName {
+  color: $blue;
+  font-size: 1em;
+  letter-spacing: 0.03em;
+  font-weight: bold;
+  line-height: 0;
+}
+
+.hotelLocation {
+  color: $lightGrey;
+  font-size: 0.8em;
+}
+
+.holidayInfo {
+  font-size: 1.1em;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  color: $grey;
+  font-size: 0.7em;
+  font-weight: 500;
+}
+
+.bookButton {
+  background-color: $yellow;
+  color: $blue;
+  border: none;
+  border-radius: 5%;
+  width: 100%;
+  line-height: 0.5em;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.bookButton div h1:nth-child(1) {
+  font-size: 1em;
+}
+
+.bookButton div h1:nth-child(2) {
+  font-size: 2em;
+}
+
+.starRating {
+  display: flex;
+  gap: 3px;
+  padding: 10px 0px;
+}

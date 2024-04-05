@@ -1,0 +1,67 @@
+.holidayCard {
+  background-color: white;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  font-family: $primaryFont;
+  line-height: 0;
+}
+
+.mainCardView {
+  display: flex;
+  position: relative;
+}
+
+.holidayImage {
+  width: 65%;
+}
+
+.readMoreToggle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  padding: 0px 15px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  color: $blue;
+  font-size: 0.9em;
+  border: none;
+  border-radius: 0;
+}
+
+.chevronIcon {
+  transition: transform 0.3s ease;
+}
+
+.chevronIcon.rotate {
+  margin-left: 8px;
+  transform: rotate(90deg);
+}
+
+.hotelDescription {
+  line-height: 1.2em;
+  letter-spacing: 0.03em;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  height: 0;
+}
+.slideDown {
+  height: 120px;
+  padding: 10px 20px;
+}
+.hotelDescription h3 {
+  color: $blue;
+  font-size: 0.9em;
+  letter-spacing: 0.03em;
+}
+
+.hotelDescription p {
+  color: $grey;
+  font-size: 0.8em;
+  letter-spacing: 0.03em;
+}

@@ -1,7 +1,7 @@
 import { Holiday } from "../../types/holiday"
-import hotel1 from "../../../assets/hotel-image-1.png"
-import hotel2 from "../../../assets/hotel-image-2.png"
-import hotel3 from "../../../assets/hotel-image-3.png"
+import hotel1 from "../../assets/hotel-image-1.png"
+import hotel2 from "../../assets/hotel-image-2.png"
+import hotel3 from "../../assets/hotel-image-3.png"
 
 export const holidays: Holiday[] = [
   {
