@@ -8,12 +8,12 @@ import {
 import { Filters } from "../types/filters"
 import { formatLabel } from "../utils/formatLabel"
 
-type SortFilterProps = {
+type SortFiltersProps = {
   selectedFilter: Filters
   onChangeFilter: (filter: Filters) => void
 }
 
-export const SortFilter: FC<SortFilterProps> = ({
+export const SortFilters: FC<SortFiltersProps> = ({
   selectedFilter,
   onChangeFilter,
 }) => {

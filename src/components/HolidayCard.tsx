@@ -24,7 +24,7 @@ export const HolidayCard: FC<HolidayCardProps> = ({ holiday }) => {
         <button
           className={styles.readMoreToggle}
           onClick={() => setReadMore(!readMore)}
-          data-testid={styles.readMoreToggle}
+          data-testid="read-more-button"
         >
           <p>
             <strong>{readMore ? "Read less" : "Read more"}</strong> about this

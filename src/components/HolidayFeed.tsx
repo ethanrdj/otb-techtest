@@ -2,7 +2,7 @@ import { FC } from "react"
 import { HolidayCard } from "./HolidayCard"
 import styles from "../styles/HolidayFeed.module.scss"
 
-import { SortFilter } from "./SortFilter"
+import { SortFilters } from "./SortFilters"
 
 import { useHolidayFilters } from "../hooks/useHolidayFilters"
 
@@ -11,7 +11,7 @@ export const HolidayFeed: FC = () => {
 
   return (
     <div className={styles.holidayFeed}>
-      <SortFilter selectedFilter={filter} onChangeFilter={onChangeFilter} />
+      <SortFilters selectedFilter={filter} onChangeFilter={onChangeFilter} />
       <div className={styles.holidaysStack}>
         {holidays.length > 0 &&
           holidays.map((holiday) => (
