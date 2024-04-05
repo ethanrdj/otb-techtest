@@ -22,11 +22,17 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "msw": "^2.2.13",
     "sass": "^1.74.1",
     "sass-loader": "^14.1.1",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   },
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  }
 }
