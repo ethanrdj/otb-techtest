@@ -3,7 +3,7 @@ import { Holiday } from "../types/holiday"
 import { Filters } from "../types/filters"
 import axios from "axios"
 
-// This hook isn't really necessary in the context of this tech test as the return value isn't reused so the logic could remain in HolidayFeed, where it was orignially written.
+// This hook isn't really necessary in the context of this tech test as the return value or functions aren't reused so the logic could remain in HolidayFeed, where it was orignially written.
 // But I just wanted tidy it up and move it into a hook so I can at least show that I am able to test hooks as well as components
 export const useHolidayFilters = () => {
   const [holidays, setHolidays] = useState<Holiday[]>([])

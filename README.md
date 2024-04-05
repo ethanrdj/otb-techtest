@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+## Available Scripts
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In the project directory, you can run:
 
-Currently, two official plugins are available:
+### `npm start`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Runs the app in the development mode.\
+Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
-## Expanding the ESLint configuration
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### `npm test`
 
-- Configure the top-level `parserOptions` property like this:
+# On the Beach Frontend Software Engineer Code Test
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Project Overview
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+This project is a client-side solution to represent a hotel listing based on the provided design (`design.png`). The implementation includes features such as sorting results by price (default), star rating, and hotel name. Additionally, it provides the ability to toggle the expanded hotel description.
+
+### Features
+
+- Sort results by price (default).
+- Sort results by star rating and highlight when active.
+- Sort results alphabetically by hotel name and highlight when active.
+- Toggle expanded hotel description.
+
+### Technologies Used
+
+- **React:** The project is built using the React library for building user interfaces.
+
+- **TypeScript:** TypeScript is used to bring static typing to the JavaScript language, enhancing code quality and developer experience.
+
+- **Sass (CSS Preprocessor):** Styles are written in Sass for a more maintainable and modular approach.
