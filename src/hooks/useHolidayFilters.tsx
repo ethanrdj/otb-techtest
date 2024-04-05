@@ -11,18 +11,26 @@ export const useHolidayFilters = () => {
   const [ascendingOrder, setAscendingOrder] = useState(true)
 
   useEffect(() => {
+    const source = axios.CancelToken.source()
+
     const fetchData = async () => {
       try {
-        const response = await axios.get("/holidays")
-
+        const response = await axios.get("/holidays", {
+          cancelToken: source.token,
+        })
         if (response) setHolidays(response.data)
       } catch (error) {
-        console.error(error)
-      } finally {
+        if (!axios.isCancel(error)) {
+          console.error(error)
+        }
       }
     }
 
     fetchData()
+
+    return () => {
+      source.cancel("Operation cancelled")
+    }
   }, [setHolidays])
 
   const toggleOrder = useCallback(() => {
